@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox Básico na Prática</title>
+  <link rel="stylesheet" href="./css/global.css">
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/flex.css">
+
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h2>Display Flex</h2>
+            <div class="divisor"></div>
+        </div>
+    </header>
+
+    <!-- Flex Direction -->
+    <div class="container grid-2">
+        <aside>
+            <nav>
+                <strong>Flex-Direction</strong>
+                <br>
+                <button 
+                    class="active native" 
+                    data-flex="flex-row" 
+                    data-target="flex-container">
+                    row
+                </button> 
+                <br>
+                <button 
+                    data-flex="flex-row-reverse" 
+                    data-target="flex-container">
+                    row-reverse
+                </button> 
+                <br>
+                <button 
+                    data-flex="flex-column" 
+                    data-target="flex-container">
+                    column
+                </button> 
+                <br>
+                <button 
+                    data-flex="flex-column-reverse" 
+                    data-target="flex-container">
+                    column-reverse
+                </button>
+            </nav>
+        </aside>
+
+        <section>
+            <article>
+                <p>Exemplo prático</p>
+                <br>
+                <div id="flex-container" class="flex">
+                    <span class="flex-item"></span>
+                    <span class="flex-item"></span>
+                    <span class="flex-item"></span>
+                </div>
+                <br> 
+                <small><i>Posiciona os elementos filhos em linhas ou colunas</i></small>
+            </article>
+            <div class="divisor"></div>
+        </section>
+    </div>
+
+    <!-- Justify Content -->
+    <div class="container grid-2">
+        <aside>
+            <nav>
+                <strong>Justify-Content</strong>
+                <br>
+                <button 
+                    class="active native" 
+                    data-flex="flex-start" 
+                    data-target="flex-container-2">
+                    flex-start
+                </button> 
+                <br>
+                <button 
+                    data-flex="flex-end" 
+                    data-target="flex-container-2">
+                    flex-end
+                </button> 
+                <br>
+                <button 
+                    data-flex="flex-center" 
+                    data-target="flex-container-2">
+                   center
+                </button> 
+                <br>
+                <button 
+                    data-flex="flex-between" 
+                    data-target="flex-container-2">
+                    space-between
+                </button>
+                <br>
+                <button 
+                    data-flex="flex-around" 
+                    data-target="flex-container-2">
+                    space-around
+                </button>
+                <br>
+                <button 
+                    data-flex="flex-evenly" 
+                    data-target="flex-container-2">
+                    space-evenly
+                </button>
+            </nav>
+        </aside>
+
+        <section>
+            <article>
+                <p>Exemplo prático</p>
+                <br>
+                <div id="flex-container-2" class="flex">
+                    <span class="flex-item"></span>
+                    <span class="flex-item"></span>
+                    <span class="flex-item"></span>
+                </div>
+                <br> 
+                <small><i>Alinha os elementos filhos no <strong>eixo Horizontal</strong></i></small>
+            </article>
+            <div class="divisor"></div>
+        </section>
+    </div>
+
+    <!-- Align Items -->
+    <div class="container grid-2">
+        <aside>
+            <nav>
+                <strong>Align-Items</strong>
+                <br>
+                <button 
+                    class="active native" 
+                    data-flex="align-start" 
+                    data-target="flex-container-3">
+                    flex-start
+                </button> 
+                <br>
+                <button 
+                    data-flex="align-end" 
+                    data-target="flex-container-3">
+                    flex-end
+                </button> 
+                <br>
+                <button 
+                    data-flex="align-center" 
+                    data-target="flex-container-3">
+                   center
+                </button> 
+            </nav>
+        </aside>
+
+        <section>
+            <article>
+                <p>Exemplo prático</p>
+                <br>
+                <div id="flex-container-3" class="align-start">
+                    <span class="flex-item"></span>
+                    <span class="flex-item"></span>
+                    <span class="flex-item"></span>
+                </div>
+                <br>
+                <small><i>Alinha os elementos filhos no <strong>eixo Vertical</strong></i></small>
+            </article>
+            <div class="divisor"></div>
+        </section>
+    </div>
+
+    <!-- Flex Wrap -->
+    <div class="container grid-2">
+        <aside>
+            <nav>
+                <strong>Flex-Wrap</strong>
+                <br>
+                <button 
+                    class="active native" 
+                    data-flex="no-wrap" 
+                    data-target="flex-container-4">
+                    no-wrap
+                </button> 
+                <br>
+                <button 
+                    data-flex="wrap" 
+                    data-target="flex-container-4">
+                    wrap
+                </button> 
+                <br>
+                <button 
+                    data-flex="wrap-reverse" 
+                    data-target="flex-container-4">
+                   wrap-reverse
+                </button> 
+            </nav>
+        </aside>
+
+        <section>
+            <article>
+                <p>Exemplo prático</p>
+                <br>
+                <div id="flex-container-4" class="no-wrap">
+                    <span class="flex-item"></span>
+                    <span class="flex-item"></span>
+                    <span class="flex-item"></span>
+                    <span class="flex-item"></span>
+                    <span class="flex-item"></span>
+                    <span class="flex-item"></span>
+                    <span class="flex-item"></span>
+                    <span class="flex-item"></span>
+                    <span class="flex-item"></span>
+                </div>
+                <br>
+                <small><i>Possibilita a quebra de linha no <strong>eixo Horizontal</strong> quando os elementos filhos forem maiores que a largura do elemento pai.</i></small>
+            </article>
+            <div class="divisor"></div>
+        </section>
+    </div>
+
+    <!-- Align Content -->
+    <div class="container grid-2">
+        <aside>
+            <nav>
+                <strong>Align-Content</strong>
+                <br>
+                <button 
+                    class="active native" 
+                    data-flex="content-stretch" 
+                    data-target="flex-container-5">
+                    stretch
+                </button> 
+                <br>
+                <button 
+                    data-flex="content-center" 
+                    data-target="flex-container-5">
+                    center
+                </button> 
+                <br>
+                <button 
+                    data-flex="content-start" 
+                    data-target="flex-container-5">
+                   flex-start
+                </button> 
+                <br>
+                <button 
+                    data-flex="content-end" 
+                    data-target="flex-container-5">
+                   flex-end
+                </button> 
+                <br>
+                <button 
+                    data-flex="content-between" 
+                    data-target="flex-container-5">
+                   space-between
+                </button> 
+                <br>
+                <button 
+                    data-flex="content-around" 
+                    data-target="flex-container-5">
+                   space-around
+                </button> 
+                <br>
+                <button 
+                    data-flex="content-evenly" 
+                    data-target="flex-container-5">
+                   space-evenly
+                </button> 
+            </nav>
+        </aside>
+
+        <section>
+            <article>
+                <p>Exemplo prático</p>
+                <br>
+                <div id="flex-container-5" class="content-stretch">
+                    <span class="flex-item"></span>
+                    <span class="flex-item"></span>
+                    <span class="flex-item"></span>
+                    <span class="flex-item"></span>
+                    <span class="flex-item"></span>
+                    <span class="flex-item"></span>
+                    <span class="flex-item"></span>
+                    <span class="flex-item"></span>
+                    <span class="flex-item"></span>
+                </div>
+                <br>
+                <small><i>Possibilita alinhar um grupo de elementos <strong>filhos</strong> no <strong>eixo vertical</strong>, quando existe mas de uma linha de <strong>flex-items</strong>. OBS.: A propriedade <strong>flex-wrap</strong> precisa ser <strong>wrap</strong>.</i></small>
+            </article>
+        </section>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <p>Desenvolvido por mim mesmo, sem pretenção nenhuma de nada só estudo. 👍 <a href="https://github.com/igorodrigues01" target="_blank">meu github só clicar</a></p>
+        </div>
+    </footer>
+  <script src="./js/main.js"></script>
+</body>
+</html>

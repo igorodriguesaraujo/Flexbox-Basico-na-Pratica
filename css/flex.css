@@ -1,0 +1,123 @@
+.flex {
+    display: flex;
+}
+
+/* flex-direciton */
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+.flex-row .flex-item:first-child {
+    flex: 2;
+}
+.flex-row-reverse {
+    display: flex;
+    flex-direction: row-reverse;
+}
+.flex-row-reverse .flex-item:first-child {
+    flex: 2;
+}
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+.flex-column .flex-item:first-child {
+    height: 240px;
+}
+.flex-column-reverse {
+    display: flex;
+    flex-direction: column-reverse;
+}
+.flex-column-reverse .flex-item:first-child {
+    height: 240px;
+}
+
+/* justify-content */
+.flex-start {
+    display: flex;
+    justify-content: flex-start;
+}
+.flex-end {
+    display: flex;
+    justify-content: flex-end;
+}
+.flex-center {
+    display: flex;
+    justify-content: center;
+}
+.flex-between {
+    display: flex;
+    justify-content: space-between;
+}
+.flex-around {
+    display: flex;
+    justify-content: space-around;
+}
+.flex-evenly {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* align-items */
+.align-start {
+    display: flex;
+    align-items:flex-start;
+}
+.align-center {
+    display: flex;
+    align-items:center;
+}
+.align-end {
+    display: flex;
+    align-items:flex-end;
+}
+/* flex-wrap */
+.no-wrap {
+    display: flex;
+    flex-wrap: nowrap;
+}
+.wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+.wrap-reverse {
+    display: flex;
+    flex-wrap: wrap-reverse;
+}
+/* align-content */
+.content-stretch {
+    display: flex;
+    flex-wrap: wrap;
+    align-content:stretch;
+}
+.content-center {
+    display: flex;
+    flex-wrap: wrap;
+    align-content:center;
+}
+.content-start {
+    display: flex;
+    flex-wrap: wrap;
+    align-content:start;
+}
+.content-end {
+    display: flex;
+    flex-wrap: wrap;
+    align-content:flex-end;
+}
+.content-between {
+    display: flex;
+    flex-wrap: wrap;
+    align-content:space-between;
+}
+.content-around {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+.content-evenly {
+    display: flex;
+    flex-wrap: wrap;
+    align-content:space-evenly;
+}
